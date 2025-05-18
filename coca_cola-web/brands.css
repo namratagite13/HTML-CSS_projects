@@ -1,0 +1,448 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* brand logos */
+
+.five-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.five-section p{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+
+.five-section span{
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.five-section span i{
+    margin-left: .3rem;
+}
+
+
+.fa-angle-down:hover{
+    rotate: 180deg;
+    
+}
+
+.five{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  
+}
+
+.five-section h1{
+    font-size: 3rem;
+}
+ 
+
+.image-logo img{
+    width: 200px;
+    border-radius: 0;
+
+}
+
+.image-logo{
+    border: 2rem solid white;
+    background: white;
+    border-radius: .8rem;
+}
+
+
+/* cards */
+
+
+.swiper-wrapper{
+   
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+   
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    padding-bottom: 5rem;
+    
+}
+
+.swiper-slide {
+    text-align:start;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+.swiper-slide .card img {
+    display: block;
+    height: 70%;
+    object-fit: cover;
+}
+
+.swiper .card{
+    width: 100%;
+    height: 500px;
+    
+
+} 
+
+
+.card .card-info{
+    padding: 2rem;
+}
+
+.card .heading a{
+    
+    color: black;
+    font-size: 1.2rem;
+}
+
+.card .heading i{
+    margin-left: 1rem;
+    
+}
+
+
+/* aside section */
+
+
+.container-aside{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
+}
+
+.info-card{
+    width: 500px;
+    height: 500px;
+    background: white;
+    padding: 3.5rem;
+    margin-top: -3rem;
+    border-radius: .9rem;
+    margin-left: 2rem;
+    z-index: 10000;
+    box-shadow: 1rem black;
+
+} 
+
+.info-card p{
+    font-size: 1.2rem;
+}
+
+
+.info-card h2{
+    font-size: 2.5rem;
+}
+
+
+/* aside card two */
+
+
+.container-aside-two{
+    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+  
+}
+
+.info-card-two{
+    width: 530px;
+    height: 530px;
+    background: white;
+    padding: 4.5rem;
+    margin-top: -3rem;
+    border-radius: .9rem;
+    margin-left: 2rem;
+    z-index: 10000;
+    box-shadow: 1rem black;
+
+} 
+
+
+.info-card-two p{
+    font-size: 1.2rem;
+}
+
+
+.info-card-two h2{
+    font-size: 2.5rem;
+   
+}
+
+.trademark{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: -2rem;
+}
+
+@media screen and (max-width:1024px){
+
+    section{
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    /* first section */
+   
+    
+    .five-section p{
+        font-size: 1rem;
+    }
+    
+    
+    .five-section span{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .fa-angle-down:hover{
+        rotate: 180deg;
+        
+    }
+    
+    .five{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      
+    }
+    .five-section h1{
+        font-size: 2rem;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+     
+    .image-logo img{
+        width: 360px;
+        border-radius: 0;
+    
+    }
+
+
+    /* swiper-section */
+
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: 3rem;
+    }
+  
+    .swiper-slide {
+        text-align: start;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        
+    }
+    .swiper-slide .card img {
+        display: block;
+        height: 500px;
+        
+    }
+    .swiper .card{
+        width: 100%;
+        height: 600px;
+    } 
+
+    /* container aside */
+
+    .container-aside{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+       
+    }
+
+
+    .container-aside .image img{
+        width: 100%;
+    }
+
+    .container-aside .info-card{
+        width: 90%;
+        height: 40%;
+        margin-bottom: -5rem;
+        padding: 2rem;
+    }
+
+    .info-card p{
+        font-size: 1rem;
+    }
+    
+    
+    .info-card h2{
+        font-size: 1.8rem;
+    }
+
+
+    .container-aside-two{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+       
+    }
+    
+    .info-card-two{
+        width: 90%;
+        height: 240px;
+        /* padding: 1rem; */
+        margin-bottom: -5rem;
+      
+    } 
+    
+    .image-aside-two img{
+        width: 100%;
+    }
+    
+    .info-card-two p{
+        font-size: 1rem;
+    }
+    
+    
+    .info-card-two h2{
+        font-size: 1.8rem;
+     
+    }
+    
+    .trademark{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+  
+    /* first section */
+   
+    .fa-angle-down:hover{
+        rotate: 180deg;
+        transition:1s ease-out;
+    }
+    
+    .five{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    /*  */
+    .five-section h1{
+        margin-top: 2rem;
+    }
+     
+    .image-logo img{
+        width: 160px;
+    }
+
+    .image-logo{
+        border: 1.2rem solid white;
+        border-radius: .9rem;
+    }
+
+    /* swiper js */
+
+    .swiper-slide .card img {
+        display: block;
+        height: 250px;
+        
+    }
+    .swiper .card{
+        width: 100%;
+        height: 400px;
+        
+    } 
+    .card .card-info{
+        padding: 1rem;
+    }
+    .card .card-info h2{
+        font-size: 1.5rem;
+    }
+    
+    .card .card-info p{
+        font-size: 1.2rem;
+    }
+    
+
+    /* container aside */
+
+
+    .info-card{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container-aside .info-card{
+        height: 40%;
+       
+    }
+
+    .info-card p{
+        font-size:.9rem;
+    }
+    .container-aside .image-aside-one img{
+        width: 100%;
+        height: 40%;
+        border-radius: 0;
+
+    }
+    /* container aside two */
+    .info-card-two{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container-aside-two .info-card-two{
+        height: 40%;
+        padding: 1rem;
+        margin-bottom: -4rem;
+       
+    }
+
+    .info-card-two p{
+        font-size:.9rem;
+    }
+
+    .container-aside-two .image-aside-two img{
+        width: 100%;
+        height: 40%;
+        border-radius: 0;
+        padding: 0;
+
+    }
+    
+    .trademark{
+
+        font-weight: 200;
+    }
+
+
+
+    
+
+}
