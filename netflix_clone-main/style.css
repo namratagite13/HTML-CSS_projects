@@ -1,0 +1,1017 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* 
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+ */
+
+
+
+:root{
+    --red:rgb(240, 33, 33);
+    --tomato-red:rgb(194, 28, 28);
+    --max-width-lg:90%;
+    --max-width-md:85%;
+    --max-width-sm:80%;
+    --grey:rgb(73, 73, 73);
+    --transition: all 500ms linear;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: white;
+
+}
+
+h1{
+    font-size: 3.3rem;
+}
+
+p{
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+   
+} 
+
+
+.section{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.transparent{
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: .2rem;
+    border: .1rem solid rgb(158, 156, 156);;
+    backdrop-filter: blur(1rem);
+   
+}
+
+.red{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: .2rem;
+    color: white;
+    background: var(--red);
+    font-size: 1rem;
+
+}
+.red:hover{
+    background: var(--tomato-red)
+}
+
+
+.email-input{
+    border: none;
+    width: 340px;
+    height: 3.5rem;
+    padding: 1rem;
+    color: white;
+    background: transparent;
+    border: .1rem solid white;
+    border-radius: .2rem;
+    backdrop-filter: blur(12rem);
+    font-size: 1rem;
+}
+
+.email-input:focus{
+    border: .3rem solid white;
+    transition: var(--transition);
+}
+
+.fa-caret-down{
+    padding: 0 .2rem 0;
+}
+
+/* nav */
+nav .container{
+   width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   padding: 2.5rem 1rem 0;
+}
+
+nav  img{
+    width: 150px;
+}
+
+.btn-nav{
+    display: flex;
+    gap: 2rem;
+
+}
+
+/* header */
+
+body{
+    background: url(./images/main-bg.jpg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: inset  5rem 8rem 8rem 1rem black;
+    backdrop-filter: brightness(50%);
+    background-position: center;
+
+}
+
+.header{
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+    height: 60vh;
+}
+
+.header p{
+    margin-top: 2rem;
+}
+
+.header .inp-head{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.header .inp-btn{
+    width: 12rem;
+    height: 3.6rem;
+    font-size: 1.5rem;
+}
+
+.border{
+    height: .7rem;
+    background: rgb(36, 35, 35);
+    width: 100%;
+}
+
+/* second */
+
+.second-section{
+    padding: 3.5rem 3rem 5rem;
+    background: black;
+    place-content: center;
+
+}
+
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.tv-area{
+    background: url(./images/tv.png);
+    background-size: cover;
+    width: 450px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tv-area video{
+    position:relative;
+    object-fit: cover;
+    overflow: hidden;
+    width: 340px;
+    top: 4.5rem;
+    left: 3.9rem;
+}
+
+.second .title{
+  margin-top: 5rem;
+
+}
+.second .title p{
+    margin-top: 2rem;
+}
+
+/* third  */
+
+.third-section{
+    padding: 3.5rem 0 5rem;
+    background-color:black;
+}
+
+.third{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 4rem;
+}
+
+.mb-container .image img{
+    width: 480px;
+    position: relative;
+}
+
+.mb-container .download{
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem ;
+    justify-content: center;
+    width: 300px;
+    height: 110px;
+    margin-top: -8rem;
+    margin-left: 5.2rem;
+    background: black;
+
+    
+}
+
+.mb-container .download img:first-child{
+    width: 3rem;
+    height: 5rem;
+    
+}
+
+
+.mb-container .download img:nth-child(3){
+    width: 3rem;
+    height: 3rem;
+}
+
+.mb-container .download p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.mb-container .download span{
+    color: blue;
+}
+
+.third .title{
+    margin-top: 5rem;
+}
+
+/* four */
+
+.four-section{
+    background: black;
+    padding: 3.5rem 3rem 5rem;
+    
+}
+
+.four{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 3rem 0;
+}
+
+.four .tv-area-two{
+    background: url(./images/flat-tv.png);
+    background-size: cover;
+    width: 480px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tv-area-two video{
+    position: absolute;
+    width: 290px;
+    height: 250px;
+    left: 5.7rem;
+    top: -1rem;
+   
+
+}
+
+.four .title{
+    margin-top: 5rem;
+}
+
+
+
+
+/* five */
+
+.five-section{
+    padding: 3.5rem 3rem 5rem;
+    background: black;
+}
+
+.five{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.five .cartoon img{
+    width: 450px;
+}
+
+.five .title{
+    margin-top: 5rem;
+}
+
+
+/* FAQ */
+
+.FAQ-section{
+    background: black;
+    padding: 0 4rem;
+
+}
+
+.FAQ-section h1{
+    text-align: center;
+    padding: 3rem 0 2rem;
+    
+}
+
+.FAQ article{
+    background: rgb(35, 34, 34);
+    margin-top: .5rem;
+}
+
+.FAQ .qna .question{
+    border-bottom: 2px solid black;
+}
+   
+.qna .question{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    line-height: 2.8rem;
+    
+}
+.qna .question:hover{
+    background: rgb(66, 65, 65);
+}
+
+
+.qna .question h3{
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+.qna .question i{
+    color: white;
+    font-size: 2rem;
+    font-weight: 10;
+
+}
+
+.qna p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: none;
+    
+    
+}
+
+.footer-input p{
+    text-align: center;
+    padding: 3rem 0 2rem;
+   
+}
+
+.footer-input .section-2{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 4rem;
+    gap: .5rem;
+}
+
+.footer-input .inp-btn{
+    width: 12rem;
+    height: 3.6rem;
+    font-size: 1.5rem;
+}
+
+/* map */
+
+.map-section{
+    background: black;
+    padding: 3rem 5rem 2rem;
+    
+    
+}
+
+.map p{
+    color:rgb(158, 156, 156);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.map u{
+    border-color: grey;
+    border-bottom: 1px solid grey;
+
+}
+.map-links{
+    margin-top: 1rem;
+}
+
+.map-links ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+  
+}
+.map-links ul li{
+    margin: .5rem 0 ;
+    list-style: none;
+}
+
+
+.map-links ul li a{
+    list-style: none;
+    color:rgb(158, 156, 156);
+    font-size: .9rem;
+    border-bottom: 1px solid rgb(158, 156, 156);
+    font-family: "Roboto", sans-serif;
+ 
+}
+
+.footer-btn .eng-footer{
+    margin: 2rem 0 1.5rem;
+    
+}
+
+
+/* tablet */
+
+
+@media screen and (max-width:1024px){
+   
+    
+    h1{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+    }
+    
+    
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+       
+    } 
+    
+    
+    .section{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* nav */
+    nav .container{
+        padding: 1rem 0 0;
+    }
+     
+    nav  img{
+        width: 90px;
+    }
+     
+    .btn-nav{
+        gap: .5rem;
+     
+    }
+
+    /* header */
+    .header{
+        margin-top: 8rem;
+        height: 55vh;
+    }
+
+    /* second */
+    .second-section{
+        padding: 1rem 4rem 4rem; 
+        place-content: center;
+    
+    }
+    
+    .second{
+        grid-template-columns: 1fr;
+    }
+    .tv-area{
+        width: 580px;
+        height: 450px;
+        margin: 0 5rem 0;
+    }
+    
+    .tv-area video{
+        width: 430px;
+        top: 6rem;
+        left: 5rem;
+    }
+
+    .second .title{
+        text-align: center;
+    }
+
+    /* third */
+
+    
+    .third-section{
+        padding: 2rem 0 5rem;
+       
+    }
+    .third{
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+    .mb-container .image{
+        padding: 0 3rem; 
+        /* margin: 0 5rem 0; */
+    }
+
+
+    .mb-container .image img{
+        width: 580px;
+       
+    }
+    
+    .mb-container .download{
+       
+        justify-content: space-evenly;
+        width: 420px;
+        height: 90px;
+        padding: .5rem 0 1rem;
+        left: 10rem;
+
+    }
+    .mb-container .download p{
+        font-size: 1rem;
+        
+    }
+    
+    .third .title{
+        text-align: center;
+    }
+    
+    .third .title h1{
+        padding: 0 0 1rem;
+    }
+
+    /* four */
+    
+    .four-section{
+        padding: 0 5rem 5rem;
+        
+    }
+    
+    .four{
+        grid-template-columns: 1fr;
+        padding: 0 3rem 0;
+    }
+    
+    .four .tv-area-two{
+        width: 600px;
+        height: 450px;
+        margin-top: 2rem;
+    }
+
+    .tv-area-two video{
+        width: 370px;
+        height: 240px;
+        left: 7rem;
+        top: 1rem;
+        
+    }
+    
+    .four .title{
+        text-align: center;
+    }  
+    .four .title h1{
+        padding: 0 0 1rem;
+
+    }
+    /* five */
+
+    .five-section{
+        padding: 1rem 1rem 3rem;
+      
+    }
+    
+    .five{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .five .cartoon img{
+        width: 650px;
+        margin: 0 5rem 0;
+    }
+    
+    .five .title{
+        text-align: center;
+    }  
+    
+    /* faq  */
+
+    .FAQ-section{
+        padding: 0 0;
+    
+    }
+    
+    .FAQ-section h1{
+        text-align: center;
+        padding: 3rem 0 1rem;
+        
+    }
+    .qna .question h3{
+        font-size: 1.2rem;
+        
+    }
+    .qna .question i{
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0;
+    
+    }
+    
+    .qna p{
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 1rem;
+        display: none;
+    }
+
+
+    /* contact  */
+    .map-section{
+        padding: 1.5rem 0 2rem;
+    }
+    
+    .map p{
+        color:rgb(158, 156, 156);
+        font-size: 1rem;
+       
+    }
+    .map u{
+        border-color: grey;
+
+    
+    }
+    .map-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+      
+    }
+    .map-links ul li{
+        list-style: none;
+    }
+    
+    
+    .map-links ul li a{
+
+        color:rgb(158, 156, 156);
+        font-size: .9rem;
+        border-bottom: 1px solid whitesmoke;
+        
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    
+    
+    h1{
+        font-size: 1.9rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+    }
+    
+    
+    .container{
+        max-width: 98%;
+    }   
+
+    .section{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+
+  
+    /* nav */
+    nav .container{
+        padding: 1rem 2.5rem 0;
+    }
+     
+    nav  img{
+        width: 80px;
+    }
+     
+    .btn-nav{
+        margin-right: -1rem;
+     
+    }
+
+    .btn-nav .transparent span{
+        display: none;
+    }
+    .btn-nav .transparent {
+        width: 4rem;
+    }
+    .btn-nav .transparent  i{
+        padding: .2rem .1rem 0 .5rem;
+        font-size: .7rem;
+    }
+
+    /* header */
+
+    .header{
+        margin-top: 3rem;
+        height: 58vh;
+        padding: 0 2.5rem 0;
+    }
+    
+    .header p{
+        margin-top: 1rem;
+    }
+    
+    .header .inp-head{
+        margin-top: 1.5rem;
+        display: block;
+        justify-content: center;
+    }
+    
+    .header .inp-btn{
+        width: 10rem;
+        height: 3.2rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    } 
+
+    /* second */
+    .second-section{
+        padding: 0 2rem 0;
+        place-content: center;
+    }
+    
+    .second{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        
+    }
+    
+    .tv-area{
+        margin: 2rem 0 3rem;
+        width: 350px;
+        height: 250px;
+        background-size: cover;
+     
+    }
+    
+    .tv-area video{
+       
+        width: 250px;
+        top: 3.5rem;
+        left: 3.1rem;
+    } 
+    
+    .second .title{
+        margin-top: 5rem;
+        text-align: center;
+       
+    }
+    .second .title p{
+        margin-top: 2rem;
+    }
+
+
+    /* third */
+    .third-section{
+        padding: 1rem 0 1rem;
+    }
+    
+    .third{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mb-container .image img{
+        width: 380px;
+       
+    }
+    
+    .mb-container .download{
+      
+        width: 250px;
+        height: 70px;
+        margin-top: -6rem;
+        margin-left: -4rem;
+
+    }
+    
+    .mb-container .download img:first-child{
+        width: 2rem;
+        height: 3rem;
+        
+    }
+    
+    
+    .mb-container .download img:nth-child(3){
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .mb-container .download p{
+        font-size: .8rem;
+        margin: 1rem 0;
+    }
+    
+    .mb-container .download span{
+        color: blue;
+    }
+    
+    .third .title{
+        margin-top: 5rem;
+        text-align: center;
+        padding: 0 0;
+    }
+
+    /* section */
+    .four-section{
+        padding: 1rem 1rem 0;
+        
+    }
+    
+    .four{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .four .tv-area-two{
+      
+        width: 380px;
+        height: 350px;
+        position: relative;
+        overflow: hidden;
+        background-size: 350px;
+        background-repeat: no-repeat;
+    }   
+    .tv-area-two video{
+        position: absolute;
+        width: 220px;
+        height: 250px;
+        left: 4rem;
+        top: -3rem; 
+    
+    } 
+
+    /* five */
+    
+    .four .title{
+        margin-top: 2rem;
+    }
+    .five-section{
+        padding: 1rem 2rem 1rem;
+      
+    }
+    
+    .five{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .five .cartoon img{
+        width: 350px;
+        margin: 2rem 0 1rem;
+        
+    }
+    
+    .five .title{
+        text-align: center;
+    }
+
+    
+    /* faq */
+    
+    .FAQ-section{
+        padding: 0 1.5rem 0;
+    }
+
+    
+    .FAQ .qna .question{
+        border-bottom: 2px solid black;
+    } 
+    
+    .qna .question h3{
+        font-size: 1.2rem;
+        
+    }
+    .qna .question i{
+        font-size: 1.3rem;
+       
+    }
+    
+    .qna p{
+        font-weight: 100;
+        font-size: 1.2rem;
+        display: none;
+    }
+    
+    .footer-input p{
+        text-align: center;
+        padding: 3rem 0 1.3rem;
+       
+    }
+    
+    .footer-input .section-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-input .inp-btn{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    /* contact */
+    .map-section{
+        padding: 1.5rem 1.5rem 2rem;
+    }
+    
+
+
+
+    
+    
+    
+
+   
+
+    
+    
+    
+
+
+  
+
+
+}
